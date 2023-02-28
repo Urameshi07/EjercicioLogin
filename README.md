@@ -18,16 +18,17 @@ Pantalla Login.
 
 Página inicial (listado de usuarios):
 
-○ Para obtener la información se debe consumir: re+/api/users
-○ Crear componente correspondiente. ○ Colocar animaciones. ○ Al seleccionar un usuario mostrar sidebar donde:
-■ Debe permitir editar los datos. La información editada debe visualizarse en el listado. 
-■ Debe tener un apartado donde se muestre el listado de los post de lapersona (ejemplo: jt+/posts?userId=1). 
+ Para obtener la información se debe consumir: re+/api/users.
+ Crear componente correspondiente. ○ Colocar animaciones. 
+ Al seleccionar un usuario mostrar sidebar donde:
+* Debe permitir editar los datos. La información editada debe visualizarse en el listado. 
+* Debe tener un apartado donde se muestre el listado de los post de lapersona (ejemplo: jt+/posts?userId=1). 
+* Permitir eliminar post. ● Álbum
+* Al seleccionar el menú Albúm:
 
-● Permitir eliminar post. ● Álbum
-● Al seleccionar el menú Albúm:
+-  Mostrar el listado de los usuarios. 
+* Al seleccionar un usuario, mostrar el álbum de fotos del usuario(ejemplo:
+   jt+/users/1/albums). 
 
-■ Mostrar el listado de los usuarios. 
-■ Al seleccionar un usuario, mostrar el álbum de fotos del usuario(ejemplo:
-jt+/users/1/albums). 
-● Permitir realizar logout. 
+* Permitir realizar logout. 
 La estructura de la aplicación es libre.
