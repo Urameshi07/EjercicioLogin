@@ -1,70 +1,36 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ejercicio para Desarrollador Front End el cual consiste en realizar tres puntos:
 
-## Available Scripts
+1.- Realizar pantalla de Login.
+2.- Habilitar pantalla de usuarios.
+3.- Funcionalidad de actualizar información de los usuarios.
 
-In the project directory, you can run:
+Asimismo se contempla el uso de styled components, reactjs y Redux para su dessarollo.
 
-### `npm start`
+Para el consumo de la información se sugieren los siguientes endpoints:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://reqres.in. (re)
+https://jsonplaceholder.typicode.com (jt)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Pantalla Login.
 
-### `npm test`
+○ Permitir realizar login re+(/api/login)
+○ Debe contener las validaciones correspondientes y visualización correctade username y password.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Página inicial (listado de usuarios):
 
-### `npm run build`
+○ Para obtener la información se debe consumir: re+/api/users
+○ Crear componente correspondiente. ○ Colocar animaciones. ○ Al seleccionar un usuario mostrar sidebar donde:
+■ Debe permitir editar los datos. La información editada debe visualizarse en el listado. 
+■ Debe tener un apartado donde se muestre el listado de los post de lapersona (ejemplo: jt+/posts?userId=1). 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+● Permitir eliminar post. ● Álbum
+● Al seleccionar el menú Albúm:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+■ Mostrar el listado de los usuarios. 
+■ Al seleccionar un usuario, mostrar el álbum de fotos del usuario(ejemplo:
+jt+/users/1/albums). 
+● Permitir realizar logout. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+La estructura de la aplicación es libre.
