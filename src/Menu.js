@@ -12,6 +12,7 @@ export default class menu extends Component {
         <br></br>
         <button onClick={()=>this.cerrarsesion()}>Cerrar Sesión</button>
 
+
       </div>
 
     )

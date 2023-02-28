@@ -11,7 +11,7 @@ export const Register = (props) => {
     }
 
     function vacios (){
-        if (name==""|| email=="" || pass==""){
+        if (name===""|| email==="" || pass===""){
             alert('Hace falta completar uno o varios campos, intenta de nuevo')
             return false;
 

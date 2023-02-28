@@ -1,27 +1,33 @@
-import React, { useState } from "react";
-import {Login} from "./Login";
+import * as React from "react";
+import "./App.css";
 
-fetch('https://reqres.in/api/users')
-.then(response => response.json())
-.then(json => {
-    console.log(json.data);
-    const markup = json.data.map(el => {
-        return `
-        <li class="card-container">
-            <div class="image-container">
-              <img class="round" src="${el.avatar}">
-    
-            </div>
-             <div class="name-container"> 
-                 <span class="firstName">${el.first_name}</span>
-                 <span class="lastName">${el.last_name}</span>
-                
-             </div> 
-             <p class="email">${el.email}</p>  
-            </li>
-        `
-    });
-    console.log(markup);
-    document.querySelector('.list-container').innerHTML = markup.join('');
-  
-})
+export default function App() {
+  const [users, setUsers] = React.useState([]);
+  const f = async () => {
+    const res = await fetch("https://reqres.in/api/users/");
+    const json = await res.json();
+    setUsers(json.data);
+  };
+  React.useEffect(() => {
+    f();
+  }, []);
+  return (
+    <div className="App">
+      <h1>Hello ReqRes users!</h1>
+      <div className="flex">
+        {users.length &&
+          users.map((user) => {
+            return (
+              <div key={user.id}>
+                <p>
+                  <strong>{user.first_name}</strong>
+                </p>
+                <p>{user.email}</p>
+                <img key={user.avatar} src={user.avatar} />
+              </div>
+            );
+          })}
+      </div>
+    </div>
+  );
+}
