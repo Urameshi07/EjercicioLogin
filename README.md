@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-Ejercicio para Desarrollador Front End el cual consiste en realizar tres puntos:
+# Ejercicio para Desarrollador Front End el cual consiste en realizar tres puntos:
 
 1.- Realizar pantalla de Login.
 2.- Habilitar pantalla de usuarios.
@@ -32,5 +30,4 @@ Página inicial (listado de usuarios):
 ■ Al seleccionar un usuario, mostrar el álbum de fotos del usuario(ejemplo:
 jt+/users/1/albums). 
 ● Permitir realizar logout. 
-
 La estructura de la aplicación es libre.
