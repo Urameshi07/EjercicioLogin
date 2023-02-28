@@ -48,3 +48,7 @@ button {
   color: white;
   text-decoration: underline;
 }
+
+input:invalid {
+  border: 2px dashed red;
+}
