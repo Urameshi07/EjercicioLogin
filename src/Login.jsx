@@ -19,11 +19,8 @@ export const Login = (props) => {
         /*Mandamos los valores de mail y pass como parámetros*/
     body: JSON.stringify({ "email": email ,"password":pass}),
     })
-        //.then(response => response.json())
-        //.then(response => console.log(JSON.stringify(response)))
-
         .then(response=>{
-            if(response.status==='200'){
+            if(response.status=='200'){
                 //Lógica para ejecutar la consulta de datos
                 alert('Bienvenido.');
                 window.location.href='./Menu';
@@ -32,6 +29,7 @@ export const Login = (props) => {
             }
         })
     }
+    
 
     return (
         <div className="auth-form-container">

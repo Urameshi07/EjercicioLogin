@@ -11,16 +11,18 @@ export const Register = (props) => {
     }
 
     function registro (){
-        fetch('https://reqres.in/api/register', {
+        fetch('https://reqres.in/api/users', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-    body: JSON.stringify({ "email": email ,"password":pass}),
+    body: JSON.stringify({ "name": name }),
     })
         .then(response => response.json())
         .then(response => console.log(JSON.stringify(response)))
+        alert('Bienvenido.');
+                window.location.href='./Login';
         
     }
 
