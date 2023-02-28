@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./App.css";
 
-export default function App() {
+export const listado = () => {
   const [users, setUsers] = React.useState([]);
   const f = async () => {
     const res = await fetch("https://reqres.in/api/users/");
@@ -13,7 +13,7 @@ export default function App() {
   }, []);
   return (
     <div className="App">
-      <h1>Hello ReqRes users!</h1>
+      <h1>Usuarios</h1>
       <div className="flex">
         {users.length &&
           users.map((user) => {
